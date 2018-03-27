@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="collectionTest" class="com.traning.CollectionTest">
+		<property name="nameList">
+			<list>
+				<value>Kush</value>
+				<value>Rahul</value>
+				<value>Kush</value>
+			</list>
+		</property>
+		<property name="nameSet">
+			<set>
+				<value>Kush</value>
+				<value>Rahul</value>
+				<value>Kush</value>
+			</set>
+		</property>
+		<property name="nameMap">
+			<map>
+				<entry key="1" value="Kush" />
+				<entry key="2" value="Rahul" />
+			</map>
+		</property>
+		<property name="nameProp">
+			<props>
+				<prop key="one">Kush</prop>
+				<prop key="two">Batra</prop>
+			</props>
+		</property>
+	</bean>
+	
+</beans>
